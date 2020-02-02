@@ -1,0 +1,35 @@
+10 graphic0,1:color0,7,2:color1,7,7:color4,2,5:scnclr
+20 vol8:n=25:e=3238:f=2215:c=160:d=118:dimx(n),y(n)
+30 fori=0to27:pokee+i,c:pokef+i,d:next
+40 fori=40to480step40:pokee+i,c:pokef+i,d:next
+50 fori=40to480step40:pokee+27+i,c:pokef+27+i,d:next
+60 fori=0to27:pokee+520+i,c:pokef+519+i,d:next
+70 n$=chr$(146)+chr$(160):f$=chr$(5)+chr$(119)
+80 c$=chr$(151)+chr$(42)
+90 fori=1ton:x(i)=int(rnd(1)*26+7)
+100 y(i)=int(rnd(1)*12+5):next
+110 fori=1ton:char1,x(i),y(i),n$:next
+120 x=7:y=5:char,x,y,c$:color1,8,7
+130 char,6,21,"lepes":char,7,20,", ,"
+140 char,28,21,"talalat":char,31,20,","
+150 getkeya$:ifa$=""then150
+160 ifa$=" "thengosub240:else170
+170 ifa$=chr$(145)theny=y-1:gosub300:ify<5theny=5:gosub310
+180 ifa$=chr$(17)theny=y+1:gosub300:ify>16theny=16:gosub310
+190 ifa$=chr$(157)thenx=x-1:gosub300:ifx<7thenx=7:gosub310
+200 ifa$=chr$(29)thenx=x+1:gosub300:ifx>32thenx=32:gosub310
+210 goto270
+220 l=l+1:char,x,y,c$:l$=str$(l):char,7,23,l$
+230 goto150
+240 fori=1ton
+250 char1,x(i),y(i),f$:next:fork=1to500:next:printchr$(146)
+260 fori=1ton:char,x(i),y(i),n$:next:goto270:return
+270 fori=1ton:ifx=x(i)andy=y(i)thenx(i)=a:y(i)=b:gosub320
+280 h$=str$(g):char,29,23,h$
+290 ifg=nthen330:elsenext:goto220
+300 sound1,739,10:return
+310 sound3,770,10:return
+320 g=g+1:sound1,881,40:sound2,917,40:return
+330 sound1,953,40:sound2,929,40:sound1,770,100:sound2,643,100
+340 v=312-l:v$=str$(v):char,15,20,"jutalom":char,18,23,v$
+350 getq$:ifq$=""then350:else20

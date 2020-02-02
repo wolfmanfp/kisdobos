@@ -1,0 +1,30 @@
+10 graphic0,1:print"honnan induljon?"
+20 print:inputa
+30 color0,8,7:color1,10,2:graphic1,1
+40 char,5,3,"ora":char,34,3,"perc"
+50 b=0:o1=160:o2=100:r1=98:r2=95:r3=90
+60 r4=78:r5=60:u=pi/30:g=u/12:f=u:h=5*u
+70 circle,o1,o2,r1:circle,o1,o2,r2
+80 fori=0to59:x=o1+r2*sin(u*i)
+90 y=o2-r2*cos(u*i):x1=o1+r3*sin(u*i)
+100 y1=o2-r3*cos(u*i)
+110 draw,x,ytox1,y1:nexti
+120 fori=0to59step5:x2=o1+r3*sin(u*i)
+130 y2=o2-r3*cos(u*i):x3=o1+r4*sin(u*i)
+140 y3=o2-r4*cos(u*i):draw,x2,y2tox3,y3
+150 next:b1=o1+r5*sin(a*h+b*g)
+160 b2=o2-r5*cos(a*h+b*g)
+170 a1=o1+r4*sin(b*f)
+180 a2=o2-r4*cos(b*f):s=-1:o=a
+190 fori=0to719
+200 s=s+1:ifs=60thens=0:o=o+1
+210 s$=str$(s):o$=str$(o)
+220 b8=o1+r5*sin(a*h+(b+i)*g)
+230 b9=o2-r5*cos(a*h+(b+i)*g)
+240 a8=o1+r4*sin((b+i)*f)
+250 a9=o2-r4*cos((b+i)*f)
+260 draw,b8,b9too1,o2:draw,a8,a9too1,o2
+270 char,1,3,o$:char,30,3,s$
+280 fork=1to171:nextk:draw0,b8,b9too1,o2
+290 draw0,a8,a9too1,o2:char0,30,3,"   "
+300 nexti
