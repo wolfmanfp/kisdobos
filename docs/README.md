@@ -4,7 +4,7 @@ Ez a kódtár a *Kisdobos* újság Pethes Endre által jegyzett *Barátunk a sz�
 
 A kódok elsősorban Commodore 16, ill. Plus/4 gépekre íródtak, azonban többnek van Commodore 64-re írt változata. Ezt `_c64` utótaggal jeleztem a fájlnévben. A másolás során nem törekedtem a pontosságra, mivel több program kódja hibásan szerepelt az újságban, így nem futnának rendesen. 
 
-A fordításhoz a [CBM prg Studio](https://www.ajordison.co.uk/), a futtatáshoz pedig a [VICE](http://vice-emu.sourceforge.net/) emulátor szükséges.
+A fordításhoz a [CBM prg Studio](https://www.ajordison.co.uk/) ajánlott. A C64-es progrmaoknál működhet a Visual Studio Code is a [VS64](https://github.com/rolandshacks/vs64) kiegészítővel, ezt nem teszteltem. A futtatáshoz pedig a [VICE](http://vice-emu.sourceforge.net/) emulátor szükséges.
 
 ## Tartalom
 
